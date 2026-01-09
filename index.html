@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OnlyFans – Subscribe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f7f8;
+      text-align: center;
+      padding-top: 80px;
+    }
+    .card {
+      background: white;
+      width: 320px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #00aff0;
+      border: none;
+      padding: 12px 20px;
+      color: white;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>@lumbani_exclusive</h2>
+    <p>Premium content 🔒</p>
+    <button onclick="reveal()">Subscribe</button>
+    <div id="joke" class="hidden">
+      😂 Subscription declined  
+      <br><br>
+      This is where you mind your business.
+    </div>
+  </div>
+
+  <script>
+    function reveal() {
+      document.getElementById("joke").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
